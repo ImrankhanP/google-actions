@@ -1,6 +1,6 @@
 name : matrix
 
-on: [push]
+on: push
 
 jobs:
   run-matrix-jobs:
