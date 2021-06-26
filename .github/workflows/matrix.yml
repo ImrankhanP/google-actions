@@ -8,13 +8,13 @@ jobs:
       matrix:
         os: [macos_latest,ubuntu-latest,windows_latest]
         node_version: [6,8,10]
-    runs-on: ${{matrix.os}}
+    runs-on: ${{ matrix.os }}
     steps:
       - name : log node version
         run : node -v
       - uses: actions/setup-node@v1
         with:
-           node-version: ${{matrix.node_version}}
+           node-version: ${{ matrix.node_version }}
       - name : log node version
         run : node -v
           
