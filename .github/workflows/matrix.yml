@@ -6,7 +6,7 @@ jobs:
   run-matrix-jobs:
     strategy:
       matrix:
-        os: [macos_latest,ubuntu-latest,windows_latest]
+        os: [macos-latest,ubuntu-latest,windows-latest]
         node_version: [6,8,10]
     runs-on: ${{ matrix.os }}
     steps:
